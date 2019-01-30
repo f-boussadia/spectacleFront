@@ -6,14 +6,12 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MyHeaderComponent } from './my-header/my-header.component';
 import { MyFooterComponent } from './my-footer/my-footer.component';
-import { MyMenuComponent } from './my-menu/my-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyHeaderComponent,
-    MyFooterComponent,
-    MyMenuComponent
+    MyFooterComponent
   ],
   imports: [
     BrowserModule,
