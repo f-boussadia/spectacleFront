@@ -1,0 +1,16 @@
+<!--<select [(ngModel)]=spectacleService>
+  <option>?</option>
+  <option>Mauvaise humeur</option>
+  <option>Humeur moyenne</option>
+  <option>Bonne humeur</option>
+</select> -->
+
+<table border="1">
+  <tr>
+    <th>Titre</th>
+  </tr>
+  <tr *ngFor="let cat of tabtabCategories">
+    <td>{{cat.titre}}</td>
+    <!--<td><input type="button" (click)="onSupprimer(cpt.numero)" value="Supprimer" /> </td>-->
+  </tr>
+</table>
