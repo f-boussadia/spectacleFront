@@ -1,0 +1,38 @@
+<div class="container center_div">
+
+<h1>Création d'un compte</h1>
+<br/>
+
+<form #formCustomer="ngForm" >
+  <bsu-my-fg-label  label="Nom">
+    <input type="Text" class="form-control" name="nom" [(ngModel)]="customer.firstName" >
+  </bsu-my-fg-label>
+
+  <bsu-my-fg-label label="Prenom">
+    <input type="Text" class="form-control" name="prenom" [(ngModel)]="customer.lastName"  >
+  </bsu-my-fg-label>
+
+  <bsu-my-fg-label label="Email">
+    <input type="email" class="form-control" name="email" [(ngModel)]="customer.email">
+  </bsu-my-fg-label>
+
+  <bsu-my-fg-label label="Téléphone">
+    <input type="email" class="form-control" name="phoneNumber" [(ngModel)]="customer.phoneNumber">
+  </bsu-my-fg-label>
+
+  <bsu-my-fg-label label="Email">
+    <input type="email" class="form-control" name="prenom" [(ngModel)]="customer.phoneNumber">
+  </bsu-my-fg-label>
+
+  <bsu-my-fg-label label="Email">
+    <input type="email" class="form-control" name="prenom" [(ngModel)]="customer.email">
+  </bsu-my-fg-label>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+
+  <input type="button" class="btn btn-primary" (click)="ajouterCustomer()" value="Enregistrer" [disabled]="!formCustomer.form.valid" /> <br />
+</form>
+</div>

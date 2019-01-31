@@ -7,6 +7,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MyHeaderComponent } from './my-header/my-header.component';
 import { MyFooterComponent } from './my-footer/my-footer.component';
 import { SpectacleComponent } from './spectacle/spectacle.component';
+import { CustomerComponent } from './customer/customer.component';
+import { BsUtilModule } from "src/bs-util/bs-util.module";
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,8 @@ import { SpectacleComponent } from './spectacle/spectacle.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, NgbModule
+    AppRoutingModule, NgbModule,
+    CustomerComponent, FormsModule, BsUtilModule
   ],
   providers: [],
   bootstrap: [AppComponent]
