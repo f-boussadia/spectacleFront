@@ -8,6 +8,7 @@ import { MyHeaderComponent } from './my-header/my-header.component';
 import { MyFooterComponent } from './my-footer/my-footer.component';
 import { CustomerComponent } from './customer/customer.component';
 import { BsUtilModule } from "src/bs-util/bs-util.module";
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { BsUtilModule } from "src/bs-util/bs-util.module";
     MyFooterComponent,
     CustomerComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, BsUtilModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, NgbModule, BsUtilModule],
   providers: [],
   bootstrap: [AppComponent]
 })
