@@ -10,18 +10,20 @@ import { SpectacleComponent } from './spectacle/spectacle.component';
 import { CustomerComponent } from './customer/customer.component';
 import { BsUtilModule } from "src/bs-util/bs-util.module";
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyHeaderComponent,
     MyFooterComponent,
-    SpectacleComponent
+    SpectacleComponent,
+    CustomerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, NgbModule,
-    CustomerComponent, FormsModule, BsUtilModule
+    FormsModule, BsUtilModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
